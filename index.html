@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>Royal Barber Studio | Barbiere Premium a Milano</title>
+  <meta name="description" content="Royal Barber Studio: barbiere premium a Milano. Taglio uomo, barba, rasatura tradizionale e trattamenti capelli. Prenota il tuo appuntamento.">
+  <meta name="keywords" content="barbiere, barber shop, taglio uomo, barba, rasatura tradizionale, barbiere Milano, barbiere premium">
+  <meta name="author" content="Royal Barber Studio">
+  <link rel="canonical" href="https://www.royalbarberstudio.it/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Royal Barber Studio | Barbiere Premium a Milano">
+  <meta property="og:description" content="Taglio uomo, barba, rasatura tradizionale e trattamenti capelli in un ambiente elegante nel cuore di Milano.">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Favicon SVG inline: rasoio incrociato a forbici -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2314171C'/%3E%3Cg stroke='%23B08D4F' stroke-width='4' fill='none' stroke-linecap='round'%3E%3Cpath d='M20 25 L80 75 M80 25 L20 75'/%3E%3Ccircle cx='20' cy='25' r='6'/%3E%3Ccircle cx='20' cy='75' r='6'/%3E%3C/g%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Bodoni Moda (display), Jost (testo), IBM Plex Mono (prezzi/utility) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;0,900;1,500&family=Jost:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Dati strutturati per la SEO locale -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Royal Barber Studio",
+    "priceRange": "€€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Brera 12",
+      "addressLocality": "Milano",
+      "postalCode": "20121",
+      "addressCountry": "IT"
+    },
+    "telephone": "+390212345678",
+    "openingHours": "Tu-Sa 09:30-19:30"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVIGAZIONE ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#home" class="logo" aria-label="Royal Barber Studio - Torna alla home">
+        <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="21" fill="none" stroke="var(--color-brass)" stroke-width="1.2"/>
+          <path d="M12 14 L32 34 M32 14 L12 34" stroke="var(--color-brass)" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+          <circle cx="12" cy="14" r="3" fill="var(--color-brass)"/>
+          <circle cx="12" cy="34" r="3" fill="var(--color-brass)"/>
+        </svg>
+        <span class="logo-text">Royal Barber</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigazione principale">
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#prezzi">Prezzi</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#recensioni">Recensioni</a>
+        <a href="#contatti">Contatti</a>
+        <a href="#contatti" class="nav-cta">Prenota</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Apri il menu di navigazione" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-photo" aria-hidden="true">
+        <!-- NOTA: immagine segnaposto — sostituire con una foto reale del salone/barbiere al lavoro prima della pubblicazione -->
+        <img src="https://picsum.photos/seed/royalbarber-hero/1600/1200" alt="" loading="eager">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Barbiere premium &middot; Milano &middot; Dal 2011</p>
+        <h1 class="hero-title">Il tuo stile,<br><em>la nostra passione</em></h1>
+        <p class="hero-text">
+          Taglio su misura, barba scolpita e rasatura a mano libera con rasoio tradizionale.
+          Un'esperienza di cura maschile fatta di gesti precisi, materiali nobili e tempo dedicato a te.
+        </p>
+        <div class="hero-actions">
+          <a href="#contatti" class="btn btn-primary">Prenota un appuntamento</a>
+          <a href="#servizi" class="btn btn-ghost">Scopri i servizi</a>
+        </div>
+      </div>
+
+      <!-- Illustrazione line-art firma del sito: si "disegna" all'apertura della pagina -->
+      <div class="hero-lineart" aria-hidden="true">
+        <svg viewBox="0 0 320 400" class="lineart-svg" id="barberLineart">
+          <!-- profilo di un volto in fase di rasatura, disegnato a tratto continuo -->
+          <path class="draw-path" d="M95 120 C90 80 120 45 165 45 C210 45 240 80 238 125 C255 130 260 150 250 165 C244 174 233 176 224 172 C218 205 200 232 175 248 L175 270 C175 285 165 292 150 292 C138 292 128 286 124 275" />
+          <path class="draw-path" d="M124 275 C110 280 92 278 80 268 C68 258 66 240 76 228" />
+          <!-- rasoio -->
+          <path class="draw-path" d="M40 205 L120 165 C126 162 134 164 137 171 C140 178 137 186 130 189 L50 227 Z" />
+          <path class="draw-path" d="M50 227 L30 236" />
+          <!-- linee di rifinitura barba -->
+          <path class="draw-path draw-delay" d="M150 250 C158 255 168 256 176 251" />
+          <path class="draw-path draw-delay" d="M145 262 C155 267 167 267 176 261" />
+        </svg>
+      </div>
+
+      <a href="#chi-siamo" class="scroll-hint" aria-label="Scorri per saperne di più"><span></span></a>
+    </section>
+
+    <!-- Divisore "linea di rasatura" - elemento distintivo ricorrente -->
+    <div class="fade-divider" aria-hidden="true"></div>
+
+    <!-- ===================== CHI SIAMO ===================== -->
+    <section class="about" id="chi-siamo">
+      <div class="section-inner about-grid">
+        <div class="about-visual reveal">
+          <div class="about-photo">
+            <!-- NOTA: immagine segnaposto — sostituire con una foto reale del team/salone -->
+            <img src="https://picsum.photos/seed/royalbarber-team/700/860" alt="Il team di barbieri di Royal Barber Studio al lavoro" loading="lazy" width="700" height="860">
+          </div>
+          <div class="experience-tag">
+            <span class="experience-num">13</span>
+            <span class="experience-label">Anni di<br>esperienza</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow eyebrow-dark">Chi siamo</p>
+          <h2 class="section-title">L'arte della barberia, senza compromessi</h2>
+          <p>
+            Royal Barber Studio nasce nel 2011 nel cuore di Brera, dall'idea di riportare in vita
+            i rituali della barberia italiana classica &mdash; rasoio a mano libera, panni caldi,
+            olii e balsami selezionati &mdash; con la cura estetica di un atelier contemporaneo.
+          </p>
+          <p>
+            Ogni barbiere del nostro team ha alle spalle almeno otto anni di formazione tecnica
+            e stilistica, tra scuole italiane e internazionali. Non lavoriamo mai di fretta:
+            ogni appuntamento è pensato per durare il tempo necessario a fare le cose bene,
+            con la massima attenzione ai dettagli, dalla linea del collo alla scelta del prodotto finale.
+          </p>
+
+          <ul class="value-list">
+            <li>
+              <span class="value-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.6L21 9.3l-5 4.5L17.4 21 12 17.3 6.6 21 8 13.8l-5-4.5 6.4-.7z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>Maestri barbieri certificati</strong><p>Formazione continua presso le migliori accademie italiane ed europee.</p></div>
+            </li>
+            <li>
+              <span class="value-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              </span>
+              <div><strong>Tempo dedicato, non affrettato</strong><p>Un solo cliente per postazione alla volta, mai in coda contro il tempo.</p></div>
+            </li>
+            <li>
+              <span class="value-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 12c2-5 6-8 8-8s6 3 8 8c-2 5-6 8-8 8s-6-3-8-8z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="2.3" fill="currentColor"/></svg>
+              </span>
+              <div><strong>Attenzione al dettaglio</strong><p>Dalla temperatura del panno caldo alla profumazione finale, nulla è lasciato al caso.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="fade-divider fade-divider-flip" aria-hidden="true"></div>
+
+    <!-- ===================== SERVIZI ===================== -->
+    <section class="services" id="servizi">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow-dark center">Servizi</p>
+        <h2 class="section-title center">Il rituale su misura per te</h2>
+        <p class="section-lead center">Cinque servizi, un unico standard: la precisione artigianale.</p>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM6 13a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM8 8l12 8M8 16l12-8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <h3>Taglio Uomo</h3>
+            <p>Taglio su misura studiato in base alla forma del viso, allo stile di vita e alla tipologia di capello. Lavaggio e styling finale inclusi.</p>
+          </div>
+          <div class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c2-5 6-8 8-8s6 3 8 8c-2 5-6 8-8 8s-6-3-8-8z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+            <h3>Barba Professionale</h3>
+            <p>Rifinitura e disegno della barba con rasoio e forbici, panno caldo e trattamento idratante finale per una barba definita e morbida.</p>
+          </div>
+          <div class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19L18 6M14 4l6 6M4 20l3-1 -2-2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Rasatura Tradizionale</h3>
+            <p>Il rituale classico a mano libera con rasoio a lama, panni caldi, olio pre-rasatura e balsamo lenitivo. Un'esperienza rilassante e senza tempo.</p>
+          </div>
+          <div class="service-card reveal">
+            <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-1 3-4 4-4 8a4 4 0 108 0c0-4-3-5-4-8z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+            <h3>Trattamenti Capelli</h3>
+            <p>Trattamenti anticaduta, ristrutturanti e lucentezza con prodotti professionali selezionati, su misura per ogni tipo di capello.</p>
+          </div>
+          <div class="service-card service-card-premium reveal">
+            <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l3 3 6-6 6 6 3-3-3 11H6L3 8z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            <h3>Pacchetti Premium</h3>
+            <p>Percorsi completi che uniscono taglio, barba e rasatura tradizionale in un'unica sessione, con trattamento viso e bevanda di benvenuto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="fade-divider" aria-hidden="true"></div>
+
+    <!-- ===================== PREZZI ===================== -->
+    <section class="pricing" id="prezzi">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow-dark center">Listino</p>
+        <h2 class="section-title center">Prezzi trasparenti, qualità costante</h2>
+
+        <div class="price-table">
+          <div class="price-row price-row-head">
+            <span>Servizio</span><span>Durata</span><span>Prezzo</span>
+          </div>
+
+          <div class="price-row"><span>Taglio Uomo</span><span>40 min</span><span class="price">€28</span></div>
+          <div class="price-row"><span>Taglio + Barba</span><span>60 min</span><span class="price">€42</span></div>
+          <div class="price-row"><span>Barba Professionale</span><span>25 min</span><span class="price">€20</span></div>
+          <div class="price-row"><span>Rasatura Tradizionale</span><span>35 min</span><span class="price">€30</span></div>
+          <div class="price-row"><span>Trattamento Anticaduta</span><span>30 min</span><span class="price">€35</span></div>
+          <div class="price-row"><span>Trattamento Ristrutturante</span><span>25 min</span><span class="price">€25</span></div>
+          <div class="price-row price-row-premium">
+            <span>Pacchetto Signature <em>(Taglio + Barba + Rasatura)</em></span><span>85 min</span><span class="price">€65</span>
+          </div>
+          <div class="price-row price-row-premium">
+            <span>Pacchetto Royal <em>(Signature + Trattamento viso)</em></span><span>110 min</span><span class="price">€89</span>
+          </div>
+        </div>
+
+        <p class="price-note">I prezzi includono lavaggio, styling e prodotti professionali. Consulenza iniziale sempre gratuita.</p>
+      </div>
+    </section>
+
+    <div class="fade-divider fade-divider-flip" aria-hidden="true"></div>
+
+    <!-- ===================== GALLERIA ===================== -->
+    <section class="gallery" id="galleria">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow-dark center">Galleria</p>
+        <h2 class="section-title center">Il salone, il gesto, il risultato</h2>
+        <p class="section-lead center">
+          <em>Nota per la pubblicazione:</em> queste immagini sono segnaposto professionali &mdash; sostituiscile con le foto reali del salone e dei lavori realizzati prima di andare online.
+        </p>
+
+        <div class="gallery-grid">
+          <button class="gallery-item" data-caption="L'ingresso del salone in Via Brera">
+            <img src="https://picsum.photos/seed/royalbarber-g1/640/800" alt="Ambiente elegante del salone Royal Barber Studio" loading="lazy" width="640" height="800">
+          </button>
+          <button class="gallery-item" data-caption="Taglio classico con rifinitura a rasoio">
+            <img src="https://picsum.photos/seed/royalbarber-g2/640/640" alt="Taglio uomo realizzato nel salone" loading="lazy" width="640" height="640">
+          </button>
+          <button class="gallery-item" data-caption="Postazione di rasatura tradizionale">
+            <img src="https://picsum.photos/seed/royalbarber-g3/640/800" alt="Postazione barbiere con strumenti tradizionali" loading="lazy" width="640" height="800">
+          </button>
+          <button class="gallery-item" data-caption="Barba scolpita con dettaglio netto">
+            <img src="https://picsum.photos/seed/royalbarber-g4/640/640" alt="Barba rifinita professionalmente" loading="lazy" width="640" height="640">
+          </button>
+          <button class="gallery-item" data-caption="Area attesa con poltrone in pelle">
+            <img src="https://picsum.photos/seed/royalbarber-g5/640/800" alt="Area attesa del salone con arredi eleganti" loading="lazy" width="640" height="800">
+          </button>
+          <button class="gallery-item" data-caption="Rituale del panno caldo">
+            <img src="https://picsum.photos/seed/royalbarber-g6/640/640" alt="Trattamento con panno caldo durante la rasatura" loading="lazy" width="640" height="640">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox per la galleria -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Chiudi immagine">&times;</button>
+      <figure>
+        <img id="lightboxImg" src="" alt="">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+
+    <div class="fade-divider" aria-hidden="true"></div>
+
+    <!-- ===================== RECENSIONI ===================== -->
+    <section class="reviews" id="recensioni">
+      <div class="section-inner">
+        <p class="eyebrow eyebrow-dark center">Recensioni</p>
+        <h2 class="section-title center">La parola ai nostri clienti</h2>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="stars" aria-label="Valutazione 5 su 5">★★★★★</div>
+            <p>"Barbiere di altissimo livello. La rasatura tradizionale è un'esperienza che consiglio a chiunque non l'abbia mai provata: rilassante e precisa."</p>
+            <div class="review-author">
+              <span class="avatar">M.</span>
+              <div><strong>Marco R.</strong><span>Cliente da 3 anni</span></div>
+            </div>
+          </article>
+          <article class="review-card reveal">
+            <div class="stars" aria-label="Valutazione 5 su 5">★★★★★</div>
+            <p>"Il pacchetto Royal è impeccabile. Attenzione ai dettagli fuori dal comune, ambiente elegante e mai fretta. Il mio salone di fiducia da anni."</p>
+            <div class="review-author">
+              <span class="avatar">L.</span>
+              <div><strong>Luca B.</strong><span>Cliente da 5 anni</span></div>
+            </div>
+          </article>
+          <article class="review-card reveal">
+            <div class="stars" aria-label="Valutazione 5 su 5">★★★★★</div>
+            <p>"Sono entrato per un taglio veloce e sono uscito capendo cosa significa davvero 'barbiere premium'. Prodotti di qualità e consigli sinceri."</p>
+            <div class="review-author">
+              <span class="avatar">D.</span>
+              <div><strong>Davide P.</strong><span>Nuovo cliente</span></div>
+            </div>
+          </article>
+          <article class="review-card reveal">
+            <div class="stars" aria-label="Valutazione 4.5 su 5">★★★★☆</div>
+            <p>"Ottima esperienza dall'inizio alla fine, dal caffè offerto in attesa al risultato finale. Location bellissima nel cuore di Brera."</p>
+            <div class="review-author">
+              <span class="avatar">A.</span>
+              <div><strong>Andrea F.</strong><span>Cliente da 1 anno</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="fade-divider fade-divider-flip" aria-hidden="true"></div>
+
+    <!-- ===================== CONTATTI ===================== -->
+    <section class="contact" id="contatti">
+      <div class="section-inner contact-grid">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Contatti &amp; Prenotazioni</p>
+          <h2 class="section-title section-title-light">Ti aspettiamo in Via Brera</h2>
+
+          <address>
+            <div class="contact-row">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 6.6 11 7.3 11.6.4.3 1 .3 1.4 0C13.4 21 20 15.2 20 10c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z" fill="currentColor"/></svg>
+              <span>Via Brera 12, 20121 Milano (MI)</span>
+            </div>
+            <div class="contact-row">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.3 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.3 1L6.6 10.8z" fill="currentColor"/></svg>
+              <a href="tel:+390212345678">+39 02 1234 5678</a>
+            </div>
+            <div class="contact-row">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v6l4 2M12 22a10 10 0 100-20 10 10 0 000 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="hours">
+                <div><span>Mar &ndash; Ven</span><span>09:30&ndash;19:30</span></div>
+                <div><span>Sabato</span><span>09:00&ndash;18:00</span></div>
+                <div><span>Dom &amp; Lun</span><span>Chiuso</span></div>
+              </div>
+            </div>
+          </address>
+
+          <a class="btn btn-whatsapp" href="https://wa.me/390212345678?text=Ciao%2C%20vorrei%20prenotare%20un%20appuntamento%20da%20Royal%20Barber%20Studio" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.9-.4-1.8-1-2.6-1.8-.7-.7-1.2-1.5-1.6-2.3-.1-.2 0-.4.1-.5.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.6.6-.9 1.3-.9 2.2.1 1 .5 2 1.2 3 1 1.4 2.2 2.5 3.7 3.3 1.7.9 2.4 1 3.2.9.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z" fill="currentColor"/><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            Prenota su WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-map reveal">
+          <iframe
+            title="Mappa Royal Barber Studio"
+            src="https://maps.google.com/maps?q=Via%20Brera%2012%2C%20Milano&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="21" fill="none" stroke="var(--color-brass)" stroke-width="1.2"/>
+          <path d="M12 14 L32 34 M32 14 L12 34" stroke="var(--color-brass)" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span>Royal Barber Studio</span>
+      </div>
+
+      <nav class="footer-social" aria-label="Social network">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M14 9h2.5V6H14c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h2.3l.7-3H14v-1.5c0-.3.2-.5.5-.5H14z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M16 3c.3 2 1.7 3.6 4 4v3c-1.5 0-3-.5-4-1.3V15a5 5 0 11-5-5c.3 0 .7 0 1 .1v3.1a2 2 0 101.5 1.9V3h2.5z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+    </div>
+    <div class="section-inner footer-bottom">
+      <p>&copy; <span id="year"></span> Royal Barber Studio &mdash; Tutti i diritti riservati. P.IVA 09876543210</p>
+      <p class="footer-credit">Precisione, stile e tradizione dal 2011.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
